@@ -21,10 +21,6 @@ header {
   align-items: center;
 }
 
-nav {
-  display: flex;
-}
-
 nav a {
   color: white;
   text-decoration: none;
@@ -81,6 +77,29 @@ nav a {
 
   .hide-desktop-only {
     display: block;
+  }
+
+  header {
+    display: block;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  nav a {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .logo {
+    padding: 40px 0;
+    text-align: center;
   }
 }
 
