@@ -1,0 +1,99 @@
+/* Global View aka Desktop View */
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #ebebeb;
+}
+
+.header-container {
+  background-color: rgb(94, 90, 90);
+  min-height: 100px;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  max-width: 1024px;
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+
+.container {
+  max-width: 1024px;
+  min-height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+
+.col {
+  width: 30%;
+  margin-bottom: 40px;
+  background-color: limegreen;
+  color: white;
+}
+
+.hide-desktop-only {
+  display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+.col p {
+  color: white;
+  font-size: 0.875rem;
+  padding: 20px 20px;
+  line-height: 1.25rem;
+}
+
+.col p::first-line {
+  font-weight: bold;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .col {
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .hide-desktop-only {
+    display: block;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+  .col {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .hide-desktop-only {
+    display: block;
+  }
+}
